@@ -1,0 +1,122 @@
+body {
+    max-width: 1440px;
+    margin: auto;
+    color: #444444;
+}
+
+#full-content-wrapper {
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#random-joke-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#categories-wrapper {
+    text-align: center;
+    width: 19%;
+    border: solid 1px rgb(140, 180, 255);
+    background-color: rgba(140,180,255,0.30);
+    border-radius: 10px;
+    margin-right: 1%;
+}
+
+#category-text {
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+#category-list {
+    font-variant: petite-caps;
+    font-size: x-large;
+}
+
+.category-list-item:hover {
+    background-color: rgb(140, 180, 255);
+    cursor: pointer;
+}
+
+#random-joke {
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    border: solid 1px rgb(140, 180, 255);
+    background-color: rgba(140,180,255,0.30);
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#jokes-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-input {
+    min-width: 300px;
+    width: 30%;
+    font-size: x-large;
+    text-align: center;
+    border: solid 1px rgb(140, 180, 255);
+    background-color: rgba(140,180,255,0.30);
+    border-radius: 5px;
+}
+
+.joke-list-item {
+    border: solid 1px rgb(140, 180, 255);
+    background-color: rgba(140,180,255,0.30);
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.search-message {
+    font-size: x-large;
+}
+
+#joke-list {
+    font-size: x-large;
+    margin: 5%;
+}
+
+@media (max-width: 600px) {
+    #random-joke-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    #random-joke {
+        font-size: 25px;
+    }
+
+    #categories-wrapper {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        font-size: 25px;
+    }
+
+}
